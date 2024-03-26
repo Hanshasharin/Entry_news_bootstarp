@@ -103,18 +103,15 @@ aside {
 .button:hover {
   background-color: hsl(240, 100%, 5%);
 }
-.new_article img {
-   max-width: 120px; 
-   max-height: 170px;
-  
-}
-.new_article h3 {
-  transition: color 0.5s ease;
-}
-.new_article h3:hover {
-  color: var(--Soft-red);
-}
-.content h2 {
-  color: hsl(233, 8%, 79%);
-  font-size: 2em;
-}
+     .new_article img{
+       max-width:120px;
+   }
+   .new_article h3{
+       transition: color 0.5s ease; 
+   }
+   .new_article h3:hover{
+       color: var(--Soft-red);
+   }
+   .content h2 {
+       color: hsl(233, 8%, 79%);
+       font-size: 2em;}
