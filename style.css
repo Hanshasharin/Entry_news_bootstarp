@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --Dark-grayish-blue: hwb(236 36% 53%);
+  --Soft-red: hsl(5, 85%, 63%);
+  --Soft-orange: hsl(35, 77%, 62%);
+}
+
+body {
+  font-family: "inter";
+}
+/* .navbar{
+    color: hsl(234 13% 42%);
+} */
+.navbar {
+  animation: fadeInNavbar 1s ease-out; /* Add animation property */
+  animation-fill-mode: forwards; /* Keep the final state of the animation */
+  opacity: 0; /* Set initial opacity to 0 */
+}
+
+/* Define the animation keyframes */
+@keyframes fadeInNavbar {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: hsl(240, 4%, 18%);
+  transition: 0.5s color ease;
+}
+
+/* Navbar link hover effect */
+.navbar-nav .nav-item .nav-link:hover {
+  color: var(--Soft-red); /* Change this to the desired hover color */
+}
+.navbar-toggler-icon {
+  color: rgb(15, 14, 14);
+  background-color: rgb(250, 244, 244);
+}
+
+.navbar-toggler {
+  color: black;
+  background-color: rgb(41, 21, 2);
+}
+@keyframes fadeInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+aside {
+  /* background-color: hsl(240, 100%, 5%);   */
+  font-family: "Inter", sans-serif;
+  color: hsl(36, 100%, 99%);
+  padding: 1em;
+  animation: fadeInFromRight 1s ease forwards; /* Apply the animation */
+}
+.heading {
+  font-size: 2.5em;
+  margin-top: 7px;
+  color: var(--Soft-orange);
+}
+.article {
+  margin: 25px 5px;
+}
+
+.article a {
+  color: hsl(36, 100%, 99%);
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: inline-block;
+  transition: color 0.5s ease;
+  text-decoration: none;
+}
+.article a:hover {
+  color: var(--Soft-orange);
+}
+
+.button {
+  background-color: hsl(5, 85%, 63%);
+  padding: 1em 1.5em;
+  display: inline-block;
+  margin-top: 1.5em;
+  text-decoration: none;
+  color: hsl(36, 100%, 99%);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  transition: background-color 0.5s ease;
+}
+.button:hover {
+  background-color: hsl(240, 100%, 5%);
+}
+.new_article img {
+   max-width: 120px; 
+   max-height: 165px;
+  
+}
+.new_article h3 {
+  transition: color 0.5s ease;
+}
+.new_article h3:hover {
+  color: var(--Soft-red);
+}
+.content h2 {
+  color: hsl(233, 8%, 79%);
+  font-size: 2em;
+}
